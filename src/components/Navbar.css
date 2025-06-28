@@ -1,0 +1,5 @@
+.navbar-link{
+    color: brown;
+    list-style-type: none;
+    display: flex;
+}
