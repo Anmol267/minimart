@@ -1,27 +1,35 @@
-import logo from "../assets/download.jpeg"
-import { FaCartArrowDown } from "react-icons/fa6";
+
+import logo from '../assets/logo.png'
+import { CiShoppingCart } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 import './Navbar.css'
 function Navbar(){
 
     return(
-    <nav class="navbar bg-body-tertiary">
+  <nav class="navbar">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src={logo} alt="Bootstrap" width="30" height="24"/>
-      <span>Minimart</span>
+      {/* <GiShoppingBag color="white"/>
+      <span class = "minimart-text">Minimart</span> */}
+      <img src = {logo} height = "30" width="150"/>
     </a>
     <ul class="navbar-link">
       <li>
-        <a href="">Home</a>
+        <a href="" class = "link">Home</a>
       </li>
       <li>
-         <a href="">Product</a>
+         <a href="" class = "link">Product</a>
       </li>
       <li>
-         <a href="">Contacts</a>
+         <a href="" class = "link">Contacts</a>
       </li>
     </ul>
-    <FaCartArrowDown size = {30}/>
+    
+    <input type="text" placeholder = "Search" class = "searchbar"/>
+    <button><FiSearch /></button>
+    <span class = "cart">
+    <CiShoppingCart size = {30} class = "cart-button" color="white"/>  My Cart
+    </span>
   </div>
 </nav>
     );

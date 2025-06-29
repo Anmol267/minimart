@@ -1,5 +1,66 @@
+*{
+    font-family: Roboto;
+}
+.navbar{
+    background-color: rgb(15, 17, 17);
+}
+.navbar-brand img:hover{
+    border: 1px solid white;
+    transform: scale(1.5); 
+
+}
+.container{
+    margin-right: 30px;
+}
 .navbar-link{
-    color: brown;
     list-style-type: none;
     display: flex;
+    margin: 0; 
+}
+.minimart-text{
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    margin: 0;
+    padding: 20px 25px;
+    vertical-align: middle;
+    font-size: 1.2em;
+    color: white;
+    
+}
+.link:hover{
+    background-color: #1f1f1f;
+    transition: background-color 1s;
+    
+}
+
+.searchbar{
+    border: 1px solid rgb(9, 9, 9);
+    border-radius: 5px;
+    width: 35%;
+    height: 45px;
+    padding: 10px;
+    margin-right: -25px;
+    
+}
+button{
+    margin-left: 0;
+    border: none;
+    background-color: orange;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+.cart{
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+}
+.cart:hover{
+    background-color: #1f1f1f;
+    transition: background-color 1s;
+    
 }
