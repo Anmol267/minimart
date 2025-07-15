@@ -33,7 +33,7 @@
     
 }
 .link:hover{
-    background-color: #1f1f1f;
+    background-color: #333333;
     transition: background-color 1s;
     
 }
@@ -47,12 +47,16 @@
     margin-right: -25px;
     
 }
-button{
+.search-button{
     margin-left: 0;
     border: none;
     background-color: orange;
     padding: 9px 10px;
     border-radius: 5px;
+}
+.search-button:hover{
+    background-color: rgb(255, 176, 31);
+    font-size: 1.1em;
 }
 .cart{
     color: white;
@@ -60,7 +64,7 @@ button{
     font-size: 1.2em;
 }
 .cart:hover{
-    background-color: #1f1f1f;
+    background-color: #333333;
     transition: background-color 1s;
     
 }
