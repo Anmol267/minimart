@@ -1,4 +1,5 @@
 import './Home.css'
+import CategoryCard from '../components/CategoryCard'
 import image1 from '../assets/image1.jpg'
 import image2 from '../assets/image2.jpg'
 import image3 from '../assets/image3.jpg'
@@ -35,30 +36,13 @@ function Home() {
     </div>
     <h2>Grab the deal! For limited time only</h2>
     <h3>Get it all right here</h3>
-    <div className="category-row">
-      <div className="categories-image">
-        <img src={grocery} height="200" width="300" />
-        <p>Groceries</p>
-      </div>
-      <div className="categories-image">
-        <img src={fashion} height="200" width="300" />
-        <p>Fashion</p>
-      </div>
-      <div className="categories-image">
-        <img src={electronics} height="200" width="300" />
-         <p>Electronics</p>
-      </div>
-      <div className="categories-image">
-        <img src={furniture} height="200" width="300" />
-        <p>Furnitures</p>
-      </div>
-      <div className="categories-image">
-        <img src={kitchen} height="200" width="300" />
-        <p>Kitchen Essentials</p>
-      </div>
+    <div className="category">
+      <CategoryCard image={grocery} title="Groceries" />
+      <CategoryCard image={fashion} title="Fashion" />
+      <CategoryCard image={electronics} title="Electronics" />
+      <CategoryCard image={furniture} title="Furniture" />
+      <CategoryCard image={kitchen} title="Kitchen" />
     </div>
-  
-
     </>
   );
 }

@@ -1,13 +1,17 @@
-.form-container{
-    justify-content: center;
-    display: flex;
-    margin-top: 70px;
-    margin-bottom: 120px;
+*{
+    font-family: Roboto;
 }
-form{
-    width: 35%;
+.container{
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    width: 80%;
     box-shadow: 2px 2px 5px 1px grey;
     border-radius: 5px;
-    padding: 30px;
+    padding: 50px;
+    padding-bottom: 90px;
+    margin-right: 100px;
+   
     
-}
+} 

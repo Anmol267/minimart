@@ -1,0 +1,14 @@
+.category-card{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.card-img{
+    height: 200px;
+    width: 295px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card-img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}

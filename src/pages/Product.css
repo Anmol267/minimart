@@ -1,21 +1,8 @@
 .card-container{
     display: flex;
-    flex-direction: row;
-    gap: 1em;
-    margin: 10px;
+    gap: 3em;
+    margin: 30px;
     justify-content: center;
-}
-span{
-    font-size: 1.5em;
-    margin-left: 10px;
-}
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
-}
-#track-image{
-    height: 350px;
-    width: 300px;
 }
 
 
