@@ -3,10 +3,11 @@
 }
 .navbar{
     background-color: rgb(15, 17, 17);
+    height: 75px;
 }
 .navbar-brand img:hover{
     border: 1px solid white;
-    transform: scale(1.5); 
+    transform: scale(1.01); 
 
 }
 .container{
@@ -44,7 +45,7 @@
     width: 35%;
     height: 45px;
     padding: 10px;
-    margin-right: -25px;
+    margin-right: -60px;
     
 }
 .search-button{
@@ -58,13 +59,4 @@
     background-color: rgb(255, 176, 31);
     font-size: 1.1em;
 }
-.cart{
-    color: white;
-    padding: 15px 25px;
-    font-size: 1.2em;
-}
-.cart:hover{
-    background-color: #333333;
-    transition: background-color 1s;
-    
-}
+

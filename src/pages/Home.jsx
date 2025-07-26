@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './Home.css'
 import CategoryCard from '../components/CategoryCard'
 import image1 from '../assets/image1.jpg'
@@ -9,6 +10,13 @@ import electronics from '../assets/electronics.jpg'
 import furniture from '../assets/furniture.jpg'
 import kitchen from '../assets/kitchen.jpg'
 function Home() {
+  const Navigate = useNavigate();
+  const handleProductPage = () =>{
+    Navigate('/product');
+  }
+  const handleGroceryPage = () =>{
+    Navigate('/product');
+  }
   return (
     <>
     <h1>Let's Do a Little Shopping!</h1>
@@ -34,10 +42,12 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
     </div>
-    <h2>Grab the deal! For limited time only</h2>
+    <div className="text-center">
+    <button className="btn btn-primary" onClick={handleProductPage}>Shop Now</button>
+    </div>
     <h3>Get it all right here</h3>
-    <div className="category">
-      <CategoryCard image={grocery} title="Groceries" />
+    <div className="category" onClick={handleGroceryPage}>
+      <CategoryCard image={grocery}  title="Groceries" />
       <CategoryCard image={fashion} title="Fashion" />
       <CategoryCard image={electronics} title="Electronics" />
       <CategoryCard image={furniture} title="Furniture" />
